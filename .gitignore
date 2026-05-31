@@ -1,0 +1,14 @@
+# Build output
+build/
+
+# Icon intermediates (regenerated from AppIcon-source.png)
+Resources/AppIcon.iconset/
+Resources/AppIcon-1024.png
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
