@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Shelf</title>
+        <link>https://github.com/DeveshSt/Shelf</link>
+        <description>Updates for Shelf — a little dropbox for short-term stuff on macOS.</description>
+        <language>en</language>
+        <!-- RELEASE_ITEMS -->
+    </channel>
+</rss>

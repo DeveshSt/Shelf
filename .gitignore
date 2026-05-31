@@ -5,6 +5,12 @@ build/
 Resources/AppIcon.iconset/
 Resources/AppIcon-1024.png
 
+# Sparkle framework + tools (auto-downloaded by build.sh)
+vendor/
+
+# Sparkle EdDSA private key backup (NEVER commit)
+*sparkle-private-key*
+
 # macOS
 .DS_Store
 
