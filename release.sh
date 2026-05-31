@@ -90,15 +90,14 @@ EOF
 )
 
 # Prepend the new <item> right before the <!-- RELEASE_ITEMS --> marker.
-python3 - "$APPCAST" <<PY
-import sys
-path = sys.argv[1]
+APPCAST_PATH="$APPCAST" NEW_ITEM="$ITEM" python3 <<'PY'
+import os
+path = os.environ["APPCAST_PATH"]
+item = os.environ["NEW_ITEM"]
+marker = "<!-- RELEASE_ITEMS -->"
 with open(path) as f:
     contents = f.read()
-marker = "<!-- RELEASE_ITEMS -->"
-item = """$ITEM
-        $marker"""
-contents = contents.replace(marker, item)
+contents = contents.replace(marker, item + "\n        " + marker)
 with open(path, "w") as f:
     f.write(contents)
 PY

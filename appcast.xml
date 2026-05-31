@@ -5,6 +5,19 @@
         <link>https://github.com/DeveshSt/Shelf</link>
         <description>Updates for Shelf — a little dropbox for short-term stuff on macOS.</description>
         <language>en</language>
+        <item>
+            <title>Shelf 1.0</title>
+            <pubDate>Sun, 31 May 2026 17:31:32 -0400</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[Initial release. A little dropbox for short-term stuff — drag screenshots and files into a floating drop zone that auto-appears when you start dragging.]]></description>
+            <enclosure
+                url="https://github.com/DeveshSt/Shelf/releases/download/v1.0/Shelf-1.0.zip"
+                sparkle:edSignature="PNsCzo2lf5T5gH09ywS9nykIiWOpjFET+NRGcCCkKCZHtN49y0gakzgvV7PUsqI4EdU/A35sVvQDSjUy5KT2Cw=="
+                length="1694477"
+                type="application/octet-stream"/>
+        </item>
         <!-- RELEASE_ITEMS -->
     </channel>
 </rss>

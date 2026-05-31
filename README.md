@@ -28,10 +28,18 @@ Native macOS app, written in Swift + SwiftUI. ~1000 lines of code.
 ## Requirements
 
 - macOS 13 (Ventura) or newer
-- Xcode Command Line Tools (`xcode-select --install`) — for `swiftc`, `sips`,
-  `iconutil`, and `codesign`. No Xcode UI required.
 
-## Build & install
+## Install (prebuilt — easiest)
+
+1. Grab the latest **`Shelf-x.x.zip`** from [Releases](https://github.com/DeveshSt/Shelf/releases).
+2. Unzip → drag `Shelf.app` into `/Applications`.
+3. First launch: right-click → **Open** (since it's not notarized by Apple), confirm once.
+4. From there on, Shelf checks for updates automatically and prompts you in-app
+   when a new version is available.
+
+## Build from source
+
+Requires Xcode Command Line Tools (`xcode-select --install`).
 
 ```bash
 git clone https://github.com/DeveshSt/Shelf.git
@@ -39,8 +47,9 @@ cd Shelf
 ./build.sh
 ```
 
-That compiles the Swift sources, bundles `Shelf.app`, ad-hoc signs it, and
-copies it to `/Applications`. To build without installing:
+That compiles the Swift sources, downloads & embeds Sparkle, bundles
+`Shelf.app`, ad-hoc signs it, and copies it to `/Applications`. To build
+without installing:
 
 ```bash
 INSTALL=0 ./build.sh
@@ -48,6 +57,13 @@ INSTALL=0 ./build.sh
 
 First launch opens the main window so you know it's alive; subsequent launches
 go silently into the menu bar.
+
+## Auto-updates
+
+Shelf uses [Sparkle](https://sparkle-project.org) for in-app updates. On
+launch it pings [`appcast.xml`](appcast.xml) on this repo, and if a newer
+release is available it prompts you to install. EdDSA-signed; key generation
++ release flow is handled by [`release.sh`](release.sh).
 
 ## Project layout
 
