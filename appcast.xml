@@ -57,6 +57,19 @@
                 length="1697755"
                 type="application/octet-stream"/>
         </item>
+                <item>
+            <title>Shelf 1.4</title>
+            <pubDate>Fri, 05 Jun 2026 21:39:31 -0400</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[Fixes: (1) Dragging a file out of the shelf no longer drags the whole window with it — the main window now only moves via its (transparent) titlebar at the top. (2) Screenshot drops are reliable for real this time — the ingest path now detects file-promise drags and goes straight to the promise-fulfillment API instead of trying a placeholder URL first.]]></description>
+            <enclosure
+                url="https://github.com/DeveshSt/Shelf/releases/download/v1.4/Shelf-1.4.zip"
+                sparkle:edSignature="YjmulP1r6s78ij2fuZ+NCihWFmLD3h4eyhcpPHb3Etuxy/dqBRGbsTIe64/LnFj7+irIZZcnOEXQ/Sic/0zQBg=="
+                length="1697989"
+                type="application/octet-stream"/>
+        </item>
         <!-- RELEASE_ITEMS -->
     </channel>
 </rss>
