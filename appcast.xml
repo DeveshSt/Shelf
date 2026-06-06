@@ -83,6 +83,19 @@
                 length="1708431"
                 type="application/octet-stream"/>
         </item>
+                <item>
+            <title>Shelf 1.6</title>
+            <pubDate>Fri, 05 Jun 2026 21:55:43 -0400</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[Fix: PNG / image files in the shelf now drag out properly. The old drag handler was rasterizing the entire screenshot (often multi-megabyte) into a tiny drag preview, which made image-file drag-outs misbehave. Switched to SwiftUI's modern .draggable(URL) API and a lightweight system-icon preview.]]></description>
+            <enclosure
+                url="https://github.com/DeveshSt/Shelf/releases/download/v1.6/Shelf-1.6.zip"
+                sparkle:edSignature="+1u9crgmJOUKhTiSWd0PnKxKEM9zc/y5BDoTtgEkMiFkTfUNZQHHuPcEjqIIw5Ejkm/kQeVs+JHCkIlj6JtNAw=="
+                length="1708316"
+                type="application/octet-stream"/>
+        </item>
         <!-- RELEASE_ITEMS -->
     </channel>
 </rss>
