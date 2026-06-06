@@ -70,6 +70,19 @@
                 length="1697989"
                 type="application/octet-stream"/>
         </item>
+                <item>
+            <title>Shelf 1.5</title>
+            <pubDate>Fri, 05 Jun 2026 21:47:40 -0400</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[REAL screenshot fix. Replaced the SwiftUI .onDrop handler with a proper AppKit NSView that handles NSFilePromiseReceiver — which is the actual mechanism screenshot thumbnails use to deliver files. SwiftUI's drop API doesn't speak file-promise protocol, so screenshots were silently failing no matter what we tried. Console now logs every drop step (filter for 'Shelf-DBG:') if anything still misbehaves.]]></description>
+            <enclosure
+                url="https://github.com/DeveshSt/Shelf/releases/download/v1.5/Shelf-1.5.zip"
+                sparkle:edSignature="01l0BTdsJ4t5kL3LSEsc3fEfI50DzJt4H1zvl5LEHSvM2uI2oxkcjhiNxSupY9C16dWXS3Yp6clqVsY27b6VBA=="
+                length="1708431"
+                type="application/octet-stream"/>
+        </item>
         <!-- RELEASE_ITEMS -->
     </channel>
 </rss>
